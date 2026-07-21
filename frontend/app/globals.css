@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-line dark:border-dkline; }
+  body { @apply bg-surface text-ink antialiased transition-colors duration-300 dark:bg-dkbg dark:text-white; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-br from-[#3A5CCC] to-[#5B7FFF] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_20px_rgba(58,92,204,.35)] transition hover:-translate-y-px hover:shadow-[0_8px_32px_rgba(58,92,204,.5)] disabled:cursor-not-allowed disabled:opacity-50; }
+  .card { @apply rounded-3xl border border-line bg-white p-6 shadow-[0_4px_24px_rgba(0,0,0,.035)] transition dark:border-dkline dark:bg-dksurf; }
+  .chip { @apply rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-graytext dark:border-dkline dark:bg-dkcard; }
+  .field { @apply w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none transition placeholder:text-graytext/70 focus:border-blue focus:ring-4 focus:ring-blue/15 dark:border-dkline dark:bg-dkcard; }
+}
