@@ -46,7 +46,7 @@ Analyze resumes, measure ATS compatibility, identify skill gaps, and receive per
 ## Resume Analysis Result
 
 <p align="center">
-<img src="./docs/4.png" width="350"/>
+<img src="./docs/4.png" width="900"/>
 </p>
 
 ---
