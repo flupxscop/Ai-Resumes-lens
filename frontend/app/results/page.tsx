@@ -18,7 +18,7 @@ const fallback: ReviewResult = {
     missing_skills: ["Research Strategy", "Analytics"],
     interview_preparation: ["Prepare a STAR story about design systems", "Explain a research decision that changed a product direction"],
   },
-  provider_response: { provider: "Ollama", model: "llama3.2" },
+  provider_response: { provider: "gemini", model: "gemini-flash-latest" },
 };
 
 const label = (name: string) => name.replace(/_score$/, "").replace(/_/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
